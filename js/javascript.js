@@ -18,12 +18,23 @@ function cerrarNavegador(){
 function buscarPalabra(){
     //Palabra a buscar.
     let palabraBuscar=document.getElementById("input_buscar").value.trim();
-    console.log(palabraBuscar+" "+palabraBuscar.length);
-    
+       
     if(palabraBuscar.length>0){
-        let divs=document.getElementById("texto");
-        console.log("hola")
-    }else{
-        
+        var textos=document.querySelectorAll("#texto div");
+        textos.forEach(elemento => {
+            let texto=elemento.innerHTML;
+            if(texto.includes(palabraBuscar)){
+                texto = buscar_Y_marcar(texto, palabraBuscar)
+            }
+        });
+    }
+}
+
+function buscar_Y_marcar(texto, palabraBuscar){
+    let textoModificado="";
+    let indiceInicio=0;
+    while(textoOriginal.indexOf(palabraBuscar,indiceInicio)!=-1){
+        let indiceFinal=textoOriginal.indexOf(palabraBuscar,indiceInicio)-1;
+        texto=texto.substring(indiceI,indiceFinal)+"<rn>"+palabraBuscar+"<rn>"+textoOriginal.substring(indiceFinal+palabraBuscar.length,
     }
 }
