@@ -1,0 +1,134 @@
+/* Proyecto realizado por: José A. Rodríguez López-->
+ * Fecha: 10/10/2022
+ */
+
+main {
+  display: grid;
+  grid-template-areas:
+    "a a a a"
+    "b b b c"
+    "b b b c"
+    "d d d d";
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.cabecera {
+  grid-area: a;
+  margin: 10px;
+}
+
+#contenedor {
+  background-color: #beb5ef;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#titulo {
+  display: flex;
+  flex-direction: row;
+}
+
+.cabecera > div div {
+  background-color: #beb5ef;
+  padding-top: 15px;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 15px;
+  margin: 0px;
+}
+
+#tit_principal {
+  background-color: #beb5ef;
+  text-decoration: underline;
+  text-align: center;
+  padding: 15px;
+  margin: 0px;
+  top: 50%;
+}
+
+#cerrar {
+  background: linear-gradient(to right, yellow,rgb(147, 226, 108));
+  color: blueviolet;
+  text-decoration: underline;
+  font-weight: bold;
+  padding: 15px;
+  margin: 0px;
+  text-align: left;
+}
+
+.buscador {
+  background: linear-gradient(to right, rgb(240, 183, 224), rgb(136, 244, 246));
+  grid-area: b;
+  margin: 10px 5px 10px 10px;
+  padding: 30px;
+}
+
+#contenedor_buscar {
+  padding: 40px;
+}
+
+aside {
+  grid-area: c;
+  margin-top: 5px;
+  margin: 5px 10px 10px 10px;
+  font-family: carlito;
+}
+
+aside div {
+  margin: 10px;
+  background-color: rgb(182, 180, 180);
+  padding: 10px;
+}
+
+#datos_1 h3 {
+  text-align: center;
+  margin: 10px 10px 0px 10px;
+}
+
+#datos_2 h3 {
+  margin: 10px 10px 0px 0px;
+}
+
+#datos_2 p {
+  text-align: justify;
+}
+
+.pie {
+  grid-area: d;
+  margin-top: 20px;
+  background-color: white;
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+  padding: 0px;
+  border-top: solid 1px black;
+}
+
+label,
+input,
+#cerrar_navegador {
+  font-size: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  margin-left: 0px;
+  width: 400px;
+}
+
+#texto{
+  padding: 40px;;
+}
+
+#texto div{
+  font-family: Verdana;
+  text-align: justify;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
