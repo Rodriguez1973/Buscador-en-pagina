@@ -18,12 +18,19 @@ main {
   margin: 10px;
 }
 
+.cabecera img{
+  width: 70px;
+  margin:0;
+  padding: auto;
+}
+
 #contenedor {
   background-color: #beb5ef;
   width: 100%;
   margin: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 #titulo {
@@ -46,7 +53,6 @@ main {
   text-align: center;
   padding: 15px;
   margin: 0px;
-  top: 50%;
 }
 
 #cerrar {
@@ -68,6 +74,8 @@ main {
 
 #contenedor_buscar {
   padding: 40px;
+  display: flex;
+  align-items: center;
 }
 
 aside {
@@ -118,8 +126,12 @@ label {
 }
 
 input {
-  margin-left: 0px;
-  width: 400px;
+  margin-left: 20px;
+  width: 300px;
+}
+
+svg{
+  margin-left: 15px;
 }
 
 #texto{
