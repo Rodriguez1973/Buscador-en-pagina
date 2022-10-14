@@ -22,10 +22,11 @@ function buscarPalabra(){
     if(palabraBuscar.length>0){
         var textos=document.querySelectorAll("#texto div");
         textos.forEach(elemento => {
-            let texto=elemento.innerHTML;
+            let texto=elemento.innerHTML.trim();
             if(texto.includes(palabraBuscar)){
                 texto = buscar_Y_marcar(texto, palabraBuscar)
             }
+            elemento.innerHTML=texto;
         });
     }
 }
@@ -33,10 +34,14 @@ function buscarPalabra(){
 function buscar_Y_marcar(texto, palabraBuscar){
     let indiceInicio=0;
     while(texto.indexOf(palabraBuscar,indiceInicio)!=-1){
-        let indiceFinal=texto.indexOf(palabraBuscar,indiceInicio)-1;
-        texto=texto.substring(indiceInicio,indiceFinal)+"<rojo>"+palabraBuscar+"<rojo>"+texto.substring(indiceFinal+palabraBuscar.length+1);
-        indiceInicio=indiceFinal+"<rojo>".length*2+palabraBuscar.length+1;
+        let indiceFinal=texto.indexOf(palabraBuscar,indiceInicio);
+        texto=texto.substring(0,indiceFinal)+"<rojoNegrita>"+palabraBuscar+"</rojoNegrita>"+texto.substring(indiceFinal+palabraBuscar.length);
+        indiceInicio=indiceFinal+"<rojoNegita>".length+"</rojoNegrita>".length+palabraBuscar.length;
     }
     console.log(texto);
     return texto;
+}
+
+function borrar_etiquetas(texto,etiquetaInicio,etiquetaFin){
+    let
 }
