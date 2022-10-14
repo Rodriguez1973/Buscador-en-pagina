@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<!--head-->
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,30 +14,32 @@
   <script src="./js/javascript.js" defer></script>
 </head>
 
+<!--body-->
 <body>
   <main id="principal">
     <!--Cabecera-->
     <header class="cabecera">
       <div id="contenedor">
         <div>
-          <img src="./images/icono lupa.jpg" alt="Lupa"></img>
+          <img src="./images/icono_lupa.jpg" alt="Lupa">
         </div>
         <div>
           <h1 id="tit_principal">Buscador</h1>
         </div>
         <div>
-          <img src="./images/icono lupa.jpg" alt="Lupa"></img>
+          <img src="./images/icono_lupa.jpg" alt="Lupa">
         </div>
       </div>
       <p id="cerrar"><a id="cerrar_navegador">Cerrar Navegador</a></p>
     </header>
 
+    <!--Buscador-->
     <article class="buscador">
       <div class="contenedor_1">
         <label for="input_buscar">Introduzca la cadena de caracteres a buscar:</label>
         <input type="text" name="input_buscar" id="input_buscar" value="">
-        <svg id="icono_buscar" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"
-          style=" fill:#000000;">
+        <svg id="icono_buscar" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+          viewBox="0 0 48 48" style=" fill:#000000;">
           <path fill="#616161" d="M34.6 28.1H38.6V45.1H34.6z" transform="rotate(-45.001 36.586 36.587)"></path>
           <path fill="#616161" d="M20 4A16 16 0 1 0 20 36A16 16 0 1 0 20 4Z"></path>
           <path fill="#37474F" d="M36.2 32.1H40.2V44.400000000000006H36.2z" transform="rotate(-45.001 38.24 38.24)">
@@ -47,10 +50,14 @@
           </path>
         </svg>
       </div>
+
+      <!--Notificaciones-->
       <div class="contenedor_1">
         <label for="notificaciones">Notificaciones:</label>
         <input type="text" name="notificaciones" id="notificaciones" value="" readonly>
       </div>
+
+      <!--Texto a tratar-->
       <div id="texto">
         <div>
           JavaScript fue desarrollado originalmente por Brendan Eich de Netscape con el nombre de Mocha, el cual fue
@@ -87,25 +94,21 @@
       </div>
     </article>
 
+    <!--Teoría-->
     <aside class="teoria">
       <div id="datos_1">
-        <h3>Datos de Tipo String UNICODE</h3>
+        <h3>Explicación teórica:</h3>
       </div>
 
       <div id="datos_2">
-        <h3>String</h3>
-        <p>La clase String incluye métodos y propiedades para procesar cadenas de caracteres.</p>
-        <p>Un string es un array de caracteres, con un indice entre 0 y número_de_caracteres-1. Cada índice representa
-          un carácter del string.</p>
-        <p><b>La propiedad length devuelve el número de caracteres en el string:<br>'ciudad'.length=>6</b></p>
-        <p><b>Utilizando el string como un array:<br>'ciudad'[2]=>'u'</b><br>Devuelve el caracter del índice 2 (comienza
-          en 0).</p>
-        <p><b>Método:<br>'ciudad'.charCodeAt(2)=>117</b><br>Devuelve el código UNICODE del tercer carácter.</p>
-        <p><b>Método:<br>'ciudad'.indexOf('da')=>3</b><br>Devuelve la posición de la subcadena.</p>
-        <p><b>Método:<br>'ciudad'.substring(2, 5)=>'uda'</b><br>Devuelve la subcadena entre ambos índices.</p>
+        <p>La función document.querySelectorAll ("#texto div") devuelve un array en el que cada elemento coresponde a un div dentro del contenedor #texto.</p>
+        <p>Recorriendo este array con un bucle for o forEach se procesa cada elemento del array, obteniendo el contenido de estos con la propiedad innerHTML.</p>
+        <p>Si la cadena de caracteres a buscar se encuentra dentro de este contenido, se procede al marcado con una etiqueta de manera que podamos establecer las propiedades de esta etiqueta en la hoja de estilo a nuestra conveniencia.</p>
+        <p>Previamente a la busqueda de una cadena de caracteres se procede a la eliminación de las etiquetas de marcado si existieran, de esta manera se puede realizar el marcado de la nueva cadena de caracteres.</p>
       </div>
     </aside>
 
+    <!--Pie de página-->
     <footer class="pie">
       <p>Desarrollo de aplicaciones Web(DAW) &copy; CIFP Santa Catalina</p>
       <p>Realizado por: José A. Rodríguez López.</p>

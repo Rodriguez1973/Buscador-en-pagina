@@ -2,6 +2,7 @@
  * Fecha: 10/10/2022
  */
 
+/*Distribución de los elementos dentro de la página*/
 main {
   display: grid;
   grid-template-areas:
@@ -21,7 +22,6 @@ main {
 .cabecera img{
   width: 70px;
   margin:0;
-  padding: auto;
 }
 
 #contenedor {
@@ -97,12 +97,9 @@ aside div {
 }
 
 #datos_1 h3 {
-  text-align: center;
-  margin: 10px 10px 0px 10px;
-}
-
-#datos_2 h3 {
-  margin: 10px 10px 0px 0px;
+  text-align: justify;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #datos_2 p {
@@ -150,7 +147,7 @@ svg{
   font-size: 20px;
 }
 
-/*Etiqueta para poner en rojo y negrita los caracteres de la caadena de texto*/
+/*Etiqueta para poner en rojo y negrita los caracteres de la cadena marcada.*/
 rojonegrita {
   color:red;
   font-weight: bold;
