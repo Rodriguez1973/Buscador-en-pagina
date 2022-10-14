@@ -3,5 +3,5 @@ Crear una utilidad en la página que busque en el texto de los elementos <div>. 
 
 Notas:
 La aplicación es "case sensitive" por lo que tiene importancia escribir un carácter en mayúsculas o minúsculas.
-En el algoritmo utilizado se recoge el texto de cada una de las etiquetas div contenidas en el <div id="texto"> en un array. A continuación se recorre este array buscando la cadena a buscar, marcando con una etiqueta "<rojonegrita>" antes de la cadena y "</rojonegrita> tras ella. Mediante la hoja de estilos .css se establecen las propiedades dentro de esta.
+En el algoritmo utilizado se recogen en un array los elementos div contenidos en el div con id="texto". A continuación se recorre este array buscando la cadena a buscar, marcando con una etiqueta antes y después de la cadena. Mediante la hoja de estilos CSS se establecen las propiedades dentro de esta.
 Al buscar una nueva cadena se eliminan las etiquetas anteriormente mencionadas para comenzar de nuevo con la busqueda y su marcado.
