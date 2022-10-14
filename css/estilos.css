@@ -72,10 +72,15 @@ main {
   padding: 30px;
 }
 
-#contenedor_buscar {
-  padding: 40px;
+.contenedor_1 {
+  padding-left: 40px;
+  padding-bottom: 20px;
   display: flex;
   align-items: center;
+}
+
+#notificaciones {
+  width: 450px;
 }
 
 aside {
@@ -146,7 +151,7 @@ svg{
 }
 
 /*Etiqueta para poner en rojo y negrita los caracteres de la caadena de texto*/
-rojoNegrita {
+rojonegrita {
   color:red;
   font-weight: bold;
 }
