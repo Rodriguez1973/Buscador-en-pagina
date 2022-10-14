@@ -144,3 +144,9 @@ svg{
   margin-bottom: 20px;
   font-size: 20px;
 }
+
+/*Etiqueta para poner en rojo y negrita los caracteres de la caadena de texto*/
+rojo {
+  color:red;
+  font-weight: bold;
+}

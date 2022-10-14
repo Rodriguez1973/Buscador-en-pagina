@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "C:/Users/j0626/OneDrive/Escritorio/Buscador-en-pagina/index.html",
+            "url": "C:\\Users\\j0626\\OneDrive\\Escritorio\\Buscador-en-pagina\\index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]

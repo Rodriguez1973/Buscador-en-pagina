@@ -31,10 +31,12 @@ function buscarPalabra(){
 }
 
 function buscar_Y_marcar(texto, palabraBuscar){
-    let textoModificado="";
     let indiceInicio=0;
-    while(textoOriginal.indexOf(palabraBuscar,indiceInicio)!=-1){
-        let indiceFinal=textoOriginal.indexOf(palabraBuscar,indiceInicio)-1;
-        texto=texto.substring(indiceI,indiceFinal)+"<rn>"+palabraBuscar+"<rn>"+textoOriginal.substring(indiceFinal+palabraBuscar.length,
+    while(texto.indexOf(palabraBuscar,indiceInicio)!=-1){
+        let indiceFinal=texto.indexOf(palabraBuscar,indiceInicio)-1;
+        texto=texto.substring(indiceInicio,indiceFinal)+"<rojo>"+palabraBuscar+"<rojo>"+texto.substring(indiceFinal+palabraBuscar.length+1);
+        indiceInicio=indiceFinal+"<rojo>".length*2+palabraBuscar.length+1;
     }
+    console.log(texto);
+    return texto;
 }
